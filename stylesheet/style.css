@@ -1,0 +1,339 @@
+@font-face {
+  font-family: dfds;
+  src: url("../fonts/dfds-bold.woff");
+}
+
+
+* {
+  box-sizing:border-box;
+}
+
+html{
+  overflow: hidden;
+}
+
+body{
+	font-family: "Segoe ui";
+	font-size: 1em;
+	background-color: #eaedee;
+	margin: 0;
+	overflow-x:scroll;
+	width:100vw;
+	height:100vh;
+  overflow-x: hidden;
+}
+
+header{
+	background-color: #FFFFFF;
+  justify-content: space-between;
+}
+
+header a{
+  text-decoration: none;
+  color: #005184;
+}
+header form{
+	overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+header form input{
+	width: 100%;
+	height: 2em;
+	font-size: 1em;
+	padding-left: 0.3em;
+}
+
+header fieldset{
+  background-color: #FFFFFF;
+}
+
+header ul{
+	display: flex;
+}
+
+header nav {
+	display: flex;
+  height: 3.5em;
+}
+
+.login {
+  position: relative;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.login.open{
+  opacity:  1;
+  z-index: 999;
+}
+
+#registreren{
+  text-align: center;
+}
+
+#registreren label{
+  display: flex;
+}
+
+#registreren input{
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+#adres{
+  width: 100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  margin-top: 0;
+  text-align: center;
+  font-family: dfds;
+}
+
+h3 {
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-family: dfds;
+  font-size: 1.2em;
+}
+
+button{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  background-color: #f6861f;
+  text-transform: uppercase;
+  height: 2em;
+  border: none;
+  color: #FFFFFF;
+}
+
+header nav img{
+  max-height: 3em;
+}
+
+main section h2{
+  margin-top: 0;
+  font-family: dfds;
+}
+
+main section footer ul{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 2em;
+  margin-bottom: 0;
+  border-top: 1px solid;
+  padding-top: 1em;
+}
+
+aside{
+	width: 20%;
+  float: right;
+}
+
+section{
+	width: 100%;
+	height: 3.5em;
+	background-color: #FFFFFF;
+}
+
+section article a{
+    justify-content: flex-end;
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #005184;
+    font-weight: 700;
+}
+
+section nav ul{
+	display: flex;
+	margin: 0;
+	padding-top: 1em;
+	justify-content: space-around;
+	padding-left: 0;
+}
+
+article{
+	padding:1em;
+	overflow-y:scroll;
+	background-color: #FFFFFF;
+
+
+}
+
+body > footer{
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer select{
+	width: 33.33%;
+  height: 4em;
+  background-color: #012b43;
+  color: #FFFFFF;
+  padding-left: 0.5em;
+}
+
+.panels {
+  background:#eaedee;
+  color:#333;
+  cursor:grab;
+  width:420vw;
+}
+
+.panels.transition {
+  transition:all .2s ease-out;
+}
+
+.panels .panel {
+  float: left;
+  width: 100vw;
+  height: 43vh;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+  #registreren legend{
+    font-weight: 700;
+  }
+
+#mobile-filter{
+  display: none;
+}
+
+@media screen and (min-width: 40em) { /* iPad formaat */
+
+  header{
+    display: flex;
+  }
+
+  header form{
+    margin-top: 0.5em;
+    width: 50%;
+  }
+
+  header section form input{
+    margin-top: 1em;
+  }
+
+  nav{
+    width: 50%;
+  }
+
+  nav form{
+    width: 21em;
+    margin-top: 0;
+  }
+
+  section nav{
+    width: 100%;
+  }
+
+  .panels .panel {
+  width: 70vw;
+    }
+
+  #registreren{
+    margin-top: 3em;
+  }
+  #registreren label{
+    justify-content: center;
+  }
+
+  #registreren input{
+    height: 2em;
+    width: 80%;
+  }
+
+  #adres{
+    width: 80%;
+  }
+
+
+
+  body{
+    font-size: 1.2em;
+  }
+
+  h3{
+    font-size: 1.4em;
+  }
+
+  h4{
+    display: none;
+  }
+
+  button{
+    height: 2em;
+    width: 9em;
+    font-size: 1.2em;
+}
+  footer select{
+    font-size: 1em;
+  }
+
+  header > form:nth-child(2){
+    width: 45%;
+    height: 2em;
+    font-size: 1em;
+    padding-left: 0.3em;
+}
+body > section:first-of-type {
+    border-top: 0.1em solid;
+    border-color: #012b43;
+}
+
+}
+
+@media screen and (min-width: 64em) { /* Desktop formaat */
+  
+  #mobile-filter{
+      display: flex;
+  }
+  #mobile-filter select{
+    width: 33.33%;
+    height: 4em;
+    background-color: #012b43;
+    color: #FFFFFF;
+    padding-left: 0.5em;
+    font-size: 1em;
+  }
+
+  body > footer{
+  display: none;
+  }
+
+  .panels .panel {
+  width: 30vw;
+}
+  p{
+    font-size: 0.9em;
+  }
+
+  button{
+    font-size: 1em;
+  }
+
+  #registreren input{
+    width: 30%;
+  }
+
+  #adres{
+    width: 30%;
+  }
+
+    }

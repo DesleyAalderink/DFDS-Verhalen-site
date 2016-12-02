@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verhalen DFDS</title>
+	<link href="stylesheet/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- header open-->
+		<header>
+			<nav>
+				<a href="index.html"><img src="img/logo.jpg" alt="DFDS logo"></a>
+				<ul>
+					<li>
+					    <a href="#" id="loginform">Login |</a> <a href="registreren.html">Registeren</a>
+					    <section class="login">
+							<form>
+						          <fieldset id="inputs">
+						            <label>Uw account naam</label><input id="username" type="email" name="Email" required>   
+						            <label>Uw wachtwoord</label><input id="password" type="password" name="Password" required>
+						          </fieldset>
+						          <fieldset id="actions">
+						            <input type="submit" id="submit" value="Log in">
+						            <label><input type="checkbox" checked="checked">Hou me ingelogd</label>
+						          </fieldset>
+						    </form>
+						    <form action="registreren.html">
+					    		<fieldset>
+					                  <a href="registreren.html">Nog geen account?</a>
+					                  <input type="submit" id="submit" value="Registreren">
+					          </fieldset>
+					        </form>
+					    </section>
+					</li>
+				</ul>
+			</nav>
+				<form>
+					<input type="text" name="zoek" placeholder="Zoek...">
+				</form>
+		</header>
+		<!-- header sluit-->
+
+		<!--pagina keuzes -->
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href=""> Opgeslagen verhalen</a></li>
+					<li><a href=""> Geschiedenis</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<!-- pagina keuze einde -->
+
+	<!-- verhalen -->
+	<section>
+		<h1>Maak een account aan</h1>
+		<form id="registreren" action="index.html">
+			<fieldset>
+					<legend>Persoonlijke Informatie</legend>
+					<label for=voornaam>Voornaam</label> <input id=voornaam name=voornaam type=text placeholder="Voorbeeld: Bart" name required/>
+					<label for=tussenvoegsel>Tussenvoegsel</label> <input id=tussenvoegsel name=tussenvoegsel type=text placeholder="Voorbeeld: van der"/>
+					<label for=achternaam>Achternaam</label> <input id=achternaam name=achternaam type=text placeholder="Voorbeeld: Berg" required/>
+					<label for=dob>Geboortedatum</label> <input id=dob name=dob type=date required/>
+				</fieldset>
+			<fieldset>
+					<legend>Wooninformatie</legend>
+					<label for=telefoon>Telefoon</label> <input id=telefoon name=telefoon placeholder="xxxx xxxxxx" type=tel required/>
+					<label for=email>Email</label> <input id=email name=email placeholder=naam@domein.com type=email required/>
+					<label for=adres>Adres</label> <textarea id=adres name=adres required></textarea>
+					<label for=postcode>Postcode</label> <input id=postcode name=postcode type=text placeholder=1234xx xxx required/>
+			</fieldset>
+			<button type="submit" value="Submit">Verstuur</button>
+
+		</form>
+	</section>
+	<!-- Filter sluit -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
+    <script src="js/login.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>
