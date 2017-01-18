@@ -12,3 +12,14 @@ for (var i = 0; i < star.length; i++) {
        this.classList.toggle("star");
 	});
 }
+
+var form = document.querySelectorAll("form");
+
+
+if (form[0]) {
+	form[0].addEventListener("submit", function(event){
+		event.preventDefault();
+		window.location = "/poging 4/";
+		console.log(window);
+	});
+}
