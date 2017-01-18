@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verhalen DFDS</title>
+	<link href="stylesheet/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- header open-->
+		<header>
+			<nav>
+				<a href="index.html"><img src="img/logo.jpg" alt="DFDS logo"></a>
+				<ul>
+					<li>
+					    <a href="#" id="loginform">Login |</a> <a href="registreren.html">Registeren</a>
+					    <section class="login">
+							<form>
+						          <fieldset id="inputs">
+						            <label>Uw account naam</label><input id="username" type="email" name="Email" required>   
+						            <label>Uw wachtwoord</label><input id="password" type="password" name="Password" required>
+						          </fieldset>
+						          <fieldset id="actions">
+						            <input type="submit" id="submit" value="Log in">
+						            <label><input type="checkbox" checked="checked">Hou me ingelogd</label>
+						          </fieldset>
+						    </form>
+						    <form action="registreren.html">
+					    		<fieldset>
+					                  <a href="registreren.html">Nog geen account?</a>
+					                  <input type="submit" id="submit" value="Registreren">
+					          </fieldset>
+					        </form>
+					    </section>
+					</li>
+				</ul>
+			</nav>
+				<form>
+					<input type="text" name="zoek" placeholder="Zoek...">
+				</form>
+		</header>
+		<!-- header sluit-->
+
+		<!--pagina keuzes -->
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href=""> Opgeslagen verhalen</a></li>
+					<li><a href=""> Geschiedenis</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<!-- pagina keuze einde -->
+
+	<!-- verhalen -->
+		<main> 
+			<h3>Opgeslagen Verhalen</h3>
+			<section class="panels">
+				<article class="panel">
+					<h2>Western</h2>
+					<p>
+						Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp.
+					</p>
+					  	 <a href="verhaal.html">Lees Meer...</a>
+				<footer>				  	 	
+					<ul>
+				  	 	<li><img src="img/heart.png" alt="hartje">100</li>
+				  	 	<li><img src="img/star.png" alt="sterretje"></li>
+				  	 	<li><img src="img/chat.png" alt="tekstwolkje">50</li>
+				  	</ul>
+				</footer>
+				</article>
+			</section>
+		</main>
+	<!-- verhalen einde -->
+
+	<!-- Filter open -->
+	<!-- Filter sluit -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
+    <script src="js/login.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html>

@@ -15,11 +15,13 @@
 					    <a href="#" id="loginform">Login |</a> <a href="registreren.html">Registeren</a>
 					    <section class="login">
 							<form>
-						          <fieldset id="inputs">
+						          <fieldset>
+						          	<legend>Actions</legend>
 						            <label>Uw account naam</label><input id="username" type="email" name="Email" required>   
 						            <label>Uw wachtwoord</label><input id="password" type="password" name="Password" required>
 						          </fieldset>
-						          <fieldset id="actions">
+						          <fieldset>
+						          	<legend>Actions</legend>
 						            <input type="submit" id="submit" value="Log in">
 						            <label><input type="checkbox" checked="checked">Hou me ingelogd</label>
 						          </fieldset>
@@ -42,14 +44,12 @@
 
 		<!--pagina keuzes -->
 
-		<section>
 			<nav>
 				<ul>
-					<li><a href=""> Opgeslagen verhalen</a></li>
+					<li><a href="Opgeslagen.html"> Opgeslagen verhalen</a></li>
 					<li><a href=""> Geschiedenis</a></li>
 				</ul>
 			</nav>
-		</section>
 
 		<!-- pagina keuze einde -->
 
@@ -64,7 +64,7 @@
 
 		<select>
 			<optgroup label="Type genre">
-				<option>-</option>
+				<option>Kies uw genre</option>
 				<option>Vervoer</option>
 				<option>Taal</option>
 				<option>Misdaad</option>
@@ -80,7 +80,7 @@
 		<select>
 			<img src="img/heart.png">
 			<optgroup label="Sorteer op">
-				<option>-</option>
+				<option>Sorteer op</option>
 				<option>A tot Z</option>
 				<option>Nieuw tot oud</option>
 				<option>Lengte</option>
@@ -90,70 +90,60 @@
 
 	<!-- verhalen -->
 		<main> 
-				<h4>Swipe naar links voor meer verhaaltjes</h4>
 			<h3>Recent</h3>
-			<section class="panels">
-				<article class="panel">
-					<h2>Beroemd</h2>
+			<section>
+
+				<article>
+					<h2>Western</h2>
 					<p>
-					  	 Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. 
-					  	 Hij zwaait joviaal terug.
+						Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp.
 					</p>
 					  	 <a href="verhaal.html">Lees Meer...</a>
 				<footer>				  	 	
 					<ul>
-				  	 	<li><img src="img/heart.png" alt="hartje">100</li>
-				  	 	<li><img src="img/star.png" alt="sterretje"></li>
+				  	 	<li><div class="heart"></div>100</li>
+				  	 	<li>
+				  	 		<img src="img/star.png" alt="sterretje">
+				  	 		<img src="img/star-full.svg" alt="sterretje full">
+				  	 	</li>
 				  	 	<li><img src="img/chat.png" alt="tekstwolkje">50</li>
 				  	</ul>
 				</footer>
 				</article>
 
 
-				<article class="panel">
-				  <h2>Test2</h2>
+				<article>
+				  <h2>Paranoia</h2>
 				  <p>
-				  	 Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. 
-				  	 Hij zwaait joviaal terug.
-				   </p>
+						Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21.  Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep.  
+				  </p>
 				  	 <a href="verhaal.html">Lees Meer...</a>
 				<footer>				  	 	
 					<ul>
-				  	 	<li><img src="img/heart.png" alt="hartje">50</li>
-				  	 	<li><img src="img/star.png" alt="sterretje"></li>
+				  	 	<li><div class="heart"></div>50</li>
+				  	 	<li>
+				  	 		<img src="img/star.png" alt="sterretje">
+				  	 		<img src="img/star-full.svg" alt="sterretje full">
+				  	 	</li>
 				  	 	<li><img src="img/chat.png" alt="tekstwolkje">90</li>
 				  	</ul>
 				</footer>
 				</article>
 
-				<article class="panel">
-				  <h2>Test3</h2>
+				<article>
+				  <h2>Droom</h2>
 				  <p>
-				  	 Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. 
-				  	 Hij zwaait joviaal terug.
+				  	 Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Nu loop ik over een smal pad langs eindeloos diepe bouwputten.
 				   </p>
 				  	 <a href="verhaal.html">Lees Meer...</a>
 				<footer>				  	 	
 					<ul>
-				  	 	<li><img src="img/heart.png" alt="hartje">60</li>
-				  	 	<li><img src="img/star.png" alt="sterretje"></li>
+				  	 	<li><div class="heart"></div>60</li>
+				  	 	<li>
+				  	 		<img src="img/star.png" alt="sterretje">
+				  	 		<img src="img/star-full.svg" alt="sterretje full">
+				  	 	</li>
 				  	 	<li><img src="img/chat.png" alt="tekstwolkje">10</li>
-				  	</ul>
-				</footer>
-				</article>
-
-				<article class="panel">
-				  <h2>Test4</h2>
-				  <p>
-				  	 Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. 
-				  	 Hij zwaait joviaal terug.
-				   </p>
-				  	 <a href="verhaal.html">Lees Meer...</a>
-				<footer>				  	 	
-					<ul>
-				  	 	<li><img src="img/heart.png" alt="hartje">10</li>
-				  	 	<li><img src="img/star.png" alt="sterretje"></li>
-				  	 	<li><img src="img/chat.png" alt="tekstwolkje">5</li>
 				  	</ul>
 				</footer>
 				</article>
@@ -174,7 +164,7 @@
 
 		<select>
 			<optgroup label="Type genre">
-				<option>-</option>
+				<option>Kies uw genre</option>
 				<option>Vervoer</option>
 				<option>Taal</option>
 				<option>Misdaad</option>
@@ -189,7 +179,7 @@
 		<select>
 			<img src="img/heart.png">
 			<optgroup label="Sorteer op">
-				<option>-</option>
+				<option>Sorteren op</option>
 				<option>A tot Z</option>
 				<option>Nieuw tot oud</option>
 				<option>Lengte</option>
@@ -201,5 +191,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
     <script src="js/login.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/interactions.js"></script>
 </body>
 </html>
