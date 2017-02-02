@@ -16,18 +16,19 @@
 					    <section>
 							<form>
 						          <fieldset>
-						          	<legend>Actions</legend>
-						            <label>Uw account naam</label><input id="username" type="email" name="Email" required>   
-						            <label>Uw wachtwoord</label><input id="password" type="password" name="Password" required>
+						          	<legend>Log In Gegevens</legend>
+						            <label for="username">Uw account naam</label><input id="username" type="email" name="Email" required>   
+						            <label for="password">Uw wachtwoord</label><input id="password" type="password" name="Password" required>
 						          </fieldset>
 						          <fieldset>
-						          	<legend>Actions</legend>
+						          	<legend>Inloggen</legend>
 						            <input type="submit" id="submit" value="Log in">
-						            <label><input type="checkbox" checked="checked">Hou me ingelogd</label>
+						            <label for="checkbox"><input type="checkbox" checked="checked">Hou me ingelogd</label>
 						          </fieldset>
 						    </form>
 						    <form action="registreren.html">
 					    		<fieldset>
+					    			<legend>Registeren</legend>
 					                  <a href="registreren.html">Nog geen account?</a>
 					                  <input type="submit" id="submit" value="Registreren">
 					          </fieldset>
@@ -46,73 +47,77 @@
 
 			<nav>
 				<ul>
-					<li><a href="Opgeslagen.html"> Opgeslagen verhalen</a></li>
-					<li><a href=""> Geschiedenis</a></li>
+					<li><a href="opgeslagen.html"> Opgeslagen verhalen<span>0</span></a></li>
+					<li><a href="geschiedenis.html">Geschiedenis</a></li>
 				</ul>
 			</nav>
 
 		<!-- pagina keuze einde -->
 
 		<section id="mobile-filter">
-					<select>
-			<optgroup  label="Kies uw filter">
-				<option>Recent</option>
-				<option>Meeste likes</option>
-				<option>Meeste comments</option>
-			</optgroup>
-		</select>
-
-		<select>
-			<optgroup label="Type genre">
-				<option>Kies uw genre</option>
-				<option>Vervoer</option>
-				<option>Taal</option>
-				<option>Misdaad</option>
-				<option>beperkingen</option>
-				<option>Kinderen</option>
-				<option>Ouderen</option>
-				<option>Religie</option>
-				<option>Beroemdheden</option>
-				<option>Overig</option>
-			</optgroup>
-		</select>
-
-		<select>
-			<img src="img/heart.png">
-			<optgroup label="Sorteer op">
-				<option>Sorteer op</option>
-				<option>A tot Z</option>
-				<option>Nieuw tot oud</option>
-				<option>Lengte</option>
-			</optgroup>
-		</select>
+			<form>
+				<select>
+					<optgroup  label="Kies uw filter">
+						<option>Recent</option>
+						<option>Meeste likes</option>
+						<option>Meeste comments</option>
+					</optgroup>
+				</select>
+			</form>
+			<form>
+				<select>
+					<optgroup label="Type genre">
+						<option>Kies uw genre</option>
+						<option>Vervoer</option>
+						<option>Taal</option>
+						<option>Misdaad</option>
+						<option>beperkingen</option>
+						<option>Kinderen</option>
+						<option>Ouderen</option>
+						<option>Religie</option>
+						<option>Beroemdheden</option>
+						<option>Overig</option>
+					</optgroup>
+				</select>
+			</form>
+			<form>
+				<select>
+					<img src="img/heart.png">
+					<optgroup label="Sorteer op">
+						<option>Sorteer op</option>
+						<option>A tot Z</option>
+						<option>Nieuw tot oud</option>
+						<option>Lengte</option>
+					</optgroup>
+				</select>
+			</form>
 		</section>
 
 	<!-- verhalen -->
+		<h3>Recent</h3>
 		<main> 
-			<h3>Recent</h3>
-			<section>
-
 				<article>
+					<img src="img/verhaaltumbnail-western.png" alt="thumbnail van het verhaal Western">
 					<h2>Western</h2>
 					<p>
 						Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp.
 					</p>
 					  	 <a href="western.html">Lees Meer...</a>
-				<footer>				  	 	
-					<ul>
-				  	 	<li><div class="heart"></div>100</li>
-				  	 	<li>
-				  	 		<img src="img/star.png" alt="sterretje">
-				  	 		<img src="img/star-full.svg" alt="sterretje full">
-				  	 	</li>
-				  	 	<li><img src="img/chat.png" alt="tekstwolkje">50</li>
-				  	</ul>
-				</footer>
+					<footer>				  	 	
+						<ul>
+					  	 	<li><div class="heart"></div><span>100</span></li>
+					  	 	<li>
+					  	 		<img src="img/star.png" alt="sterretje">
+					  	 		<img src="img/star-full.svg" alt="sterretje full">
+					  	 	</li>
+					  	 	<li><img src="img/chat.png" alt="tekstwolkje">50</li>
+					  	</ul>
+					</footer>
 				</article>
 
 
 				<article>
+				  <img src="img/verhaaltumbnail-paranoia.png" alt="thumbnail van het verhaal Paranoia">
 				  <h2>Paranoia</h2>
 				  <p>
 						Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21.  Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep.  
@@ -120,7 +125,7 @@
 				  	 <a href="paranoia.html">Lees Meer...</a>
 				<footer>				  	 	
 					<ul>
-				  	 	<li><div class="heart"></div>50</li>
+				  	 	<li><div class="heart"></div><span>50</span></li>
 				  	 	<li>
 				  	 		<img src="img/star.png" alt="sterretje">
 				  	 		<img src="img/star-full.svg" alt="sterretje full">
@@ -133,6 +138,7 @@
 				</article>
 
 				<article>
+				  <img src="img/verhaaltumbnail-droom.png" alt="thumbnail van het verhaal Droom">
 				  <h2>Droom</h2>
 				  <p>
 				  	 Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Nu loop ik over een smal pad langs eindeloos diepe bouwputten.
@@ -140,7 +146,7 @@
 				  	 <a href="droom.html">Lees Meer...</a>
 				<footer>				  	 	
 					<ul>
-				  	 	<li><div class="heart"></div>60</li>
+				  	 	<li><div class="heart"></div><span>60</span></li>
 				  	 	<li>
 				  	 		<img src="img/star.png" alt="sterretje">
 				  	 		<img src="img/star-full.svg" alt="sterretje full">
@@ -149,49 +155,68 @@
 				  	</ul>
 				</footer>
 				</article>
-			</section>
+
+				<article>
+					<img src="img/verhaaltumbnail-stoned.png" alt="thumbnail van het verhaal Stoned">
+					<h2>Stoned</h2>
+					<p>
+						zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, houd 
+					</p>
+					  	 <a href="western.html">Lees Meer...</a>
+					<footer>				  	 	
+						<ul>
+					  	 	<li><div class="heart"></div><span>100</span></li>
+					  	 	<li>
+					  	 		<img src="img/star.png" alt="sterretje">
+					  	 		<img src="img/star-full.svg" alt="sterretje full">
+					  	 	</li>
+					  	 	<li><img src="img/chat.png" alt="tekstwolkje">50</li>
+					  	</ul>
+					</footer>
+				</article>
 		</main>
 		<a href="droom.html"><button>aanbevolen</button></a>
 	<!-- verhalen einde -->
 
 	<!-- Filter open -->
 	<footer>
-		<select>
-			<optgroup  label="Kies uw filter">
-				<option>Recent</option>
-				<option>Meeste likes</option>
-				<option>Meeste comments</option>
-			</optgroup>
-		</select>
-
-		<select>
-			<optgroup label="Type genre">
-				<option>Kies uw genre</option>
-				<option>Vervoer</option>
-				<option>Taal</option>
-				<option>Misdaad</option>
-				<option>beperkingen</option>
-				<option>Kinderen</option>
-				<option>Ouderen</option>
-				<option>Religie</option>
-				<option>Beroemdheden</option>
-			</optgroup>
-		</select>
-
-		<select>
-			<optgroup label="Sorteer op">
-				<option>Sorteren op</option>
-				<option>A tot Z</option>
-				<option>Nieuw tot oud</option>
-				<option>Lengte</option>
-			</optgroup>
-		</select>
+		<form>
+			<select>
+				<optgroup  label="Kies uw filter">
+					<option>Recent</option>
+					<option>Meeste likes</option>
+					<option>Meeste comments</option>
+				</optgroup>
+			</select>
+		</form>
+		<form>
+			<select>
+				<optgroup label="Type genre">
+					<option>Kies uw genre</option>
+					<option>Vervoer</option>
+					<option>Taal</option>
+					<option>Misdaad</option>
+					<option>beperkingen</option>
+					<option>Kinderen</option>
+					<option>Ouderen</option>
+					<option>Religie</option>
+					<option>Beroemdheden</option>
+				</optgroup>
+			</select>
+		</form>
+		<form>
+			<select>
+				<optgroup label="Sorteer op">
+					<option>Sorteren op</option>
+					<option>A tot Z</option>
+					<option>Nieuw tot oud</option>
+					<option>Lengte</option>
+				</optgroup>
+			</select>
+		</form>
 	</footer>
 	<!-- Filter sluit -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
-    <script src="js/login.js"></script>
-    <script src="js/scroll.js"></script>
     <script src="js/interactions.js"></script>
 </body>
 </html>

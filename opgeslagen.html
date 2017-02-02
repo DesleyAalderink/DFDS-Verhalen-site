@@ -42,44 +42,41 @@
 
 		<!--pagina keuzes -->
 
-		<section>
-			<nav>
-				<ul>
-					<li><a href=""> Opgeslagen verhalen</a></li>
-					<li><a href=""> Geschiedenis</a></li>
-				</ul>
-			</nav>
-		</section>
+		<nav>
+			<ul>
+				<li><a href="opgeslagen.html"> Opgeslagen verhalen<span>0</span></a></li>
+				<li><a href="geschiedenis.html"> Geschiedenis</a></li>
+			</ul>
+		</nav>
 
 		<!-- pagina keuze einde -->
 
 	<!-- verhalen -->
+		<h3>Opgeslagen Verhalen</h3>
 		<main> 
-			<h3>Opgeslagen Verhalen</h3>
-			<section class="panels">
-				<article class="panel">
-					<h2>Western</h2>
-					<p>
-						Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp.
-					</p>
-					  	 <a href="verhaal.html">Lees Meer...</a>
+			<article>
+				<img src="img/verhaaltumbnail-western.png" alt="thumbnail van het verhaal Western">
+				<h2>Western</h2>
+				<p>
+					Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp.
+				</p>
+				  	 <a href="western.html">Lees Meer...</a>
 				<footer>				  	 	
 					<ul>
-				  	 	<li><img src="img/heart.png" alt="hartje">100</li>
-				  	 	<li><img src="img/star.png" alt="sterretje"></li>
+				  	 	<li><div class="heart"></div><span>100</span></li>
+				  	 	<li>
+				  	 		<img src="img/star.png" alt="sterretje">
+				  	 		<img src="img/star-full.svg" alt="sterretje full">
+				  	 	</li>
 				  	 	<li><img src="img/chat.png" alt="tekstwolkje">50</li>
 				  	</ul>
 				</footer>
-				</article>
-			</section>
-		</main>
+			</article>
 	<!-- verhalen einde -->
 
 	<!-- Filter open -->
 	<!-- Filter sluit -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
-    <script src="js/login.js"></script>
-    <script src="js/scroll.js"></script>
+    <script src="js/interactions.js"></script>
 </body>
 </html>

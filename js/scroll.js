@@ -1,10 +1,10 @@
 (function(){
   'use strict';
 
-  var panels = document.querySelector( 'main section' );
+  var panels = document.querySelector( 'main' );
   var content = document.querySelector( 'article' );
   var margin = parseInt(window.getComputedStyle(content, null).getPropertyValue("margin-right"));
-  var allContent = document.querySelectorAll( 'main section article' );
+  var allContent = document.querySelectorAll( 'main article' );
   var width = content.offsetWidth + margin;
   var panLeft = 0;
 console.log(margin);
@@ -36,3 +36,5 @@ console.log(margin);
   });
 
 })();
+
+/* Bron: Joost Faber */

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verhalen DFDS</title>
+	<link href="stylesheet/style.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<!-- header open-->
+		<header>
+			<nav>
+				<a href="index.html"><img src="img/logo.jpg" alt="DFDS logo"></a>
+				<ul>
+					<li>
+					    <a href="#" id="loginform">Login |</a> <a href="registreren.html">Registeren</a>
+					    <section class="login">
+							<form>
+						          <fieldset id="inputs">
+						            <label>Uw account naam</label><input id="username" type="email" name="Email" required>   
+						            <label>Uw wachtwoord</label><input id="password" type="password" name="Password" required>
+						          </fieldset>
+						          <fieldset id="actions">
+						            <input type="submit" id="submit" value="Log in">
+						            <label><input type="checkbox" checked="checked">Hou me ingelogd</label>
+						          </fieldset>
+						    </form>
+						    <form action="registreren.html">
+					    		<fieldset>
+					                  <a href="registreren.html">Nog geen account?</a>
+					                  <input type="submit" id="submit" value="Registreren">
+					          </fieldset>
+					        </form>
+					    </section>
+					</li>
+				</ul>
+			</nav>
+				<form>
+					<input type="text" name="zoek" placeholder="Zoek...">
+				</form>
+		</header>
+		<!-- header sluit-->
+
+		<!--pagina keuzes -->
+
+		<nav>
+			<ul>
+				<li><a href="opgeslagen.html"> Opgeslagen verhalen<span>0</span></a></li>
+				<li><a href="geschiedenis.html"> Geschiedenis</a></li>
+			</ul>
+		</nav>
+
+		<!-- pagina keuze einde -->
+
+	<!-- verhalen -->
+		<h3>Geschiedenis</h3>
+		<main> 
+				<article>
+					<img src="img/verhaaltumbnail-western.png" alt="thumbnail van het verhaal Western">
+					<h2>Western</h2>
+					<p>
+						Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten prairydorp.
+					</p>
+					  	 <a href="western.html">Lees Meer...</a>
+					<footer>				  	 	
+						<ul>
+					  	 	<li><div class="heart"></div><span>100</span></li>
+					  	 	<li>
+					  	 		<img src="img/star.png" alt="sterretje">
+					  	 		<img src="img/star-full.svg" alt="sterretje full">
+					  	 	</li>
+					  	 	<li><img src="img/chat.png" alt="tekstwolkje">50</li>
+					  	</ul>
+					</footer>
+				</article>
+
+
+				<article>
+				  <img src="img/verhaaltumbnail-paranoia.png" alt="thumbnail van het verhaal Paranoia">
+				  <h2>Paranoia</h2>
+				  <p>
+						Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21.  Het was warm, zweet parelde langs mijn slapen, mijn zoon sliep.  
+				  </p>
+				  	 <a href="paranoia.html">Lees Meer...</a>
+				<footer>				  	 	
+					<ul>
+				  	 	<li><div class="heart"></div><span>50</span></li>
+				  	 	<li>
+				  	 		<img src="img/star.png" alt="sterretje">
+				  	 		<img src="img/star-full.svg" alt="sterretje full">
+				  	 	</li>
+				  	 	<li>
+				  	 		<img src="img/chat.png" alt="tekstwolkje">90
+				  	 	</li>
+				  	</ul>
+				</footer>
+				</article>
+
+				<article>
+				  <img src="img/verhaaltumbnail-droom.png" alt="thumbnail van het verhaal Droom">
+				  <h2>Droom</h2>
+				  <p>
+				  	 Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Nu loop ik over een smal pad langs eindeloos diepe bouwputten.
+				   </p>
+				  	 <a href="droom.html">Lees Meer...</a>
+				<footer>				  	 	
+					<ul>
+				  	 	<li><div class="heart"></div><span>60</span></li>
+				  	 	<li>
+				  	 		<img src="img/star.png" alt="sterretje">
+				  	 		<img src="img/star-full.svg" alt="sterretje full">
+				  	 	</li>
+				  	 	<li><img src="img/chat.png" alt="tekstwolkje">10</li>
+				  	</ul>
+				</footer>
+				</article>
+
+	<!-- verhalen einde -->
+
+	<!-- Filter open -->
+	<!-- Filter sluit -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
+    <script src="js/interactions.js"></script>
+</body>
+</html>
